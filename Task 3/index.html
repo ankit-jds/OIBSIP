@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temparature Convertor</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="pt-12">
+        <form action="#" id="temperature_form" class="shadow-2xl w-fit mx-auto rounded-xl
+        ">
+            <h1 class="text-2xl font-extrabold text-center">Temparature Convertor</h1>
+            <div class="flex flex-col items-center mx-auto mt-4 w-fit p-4">
+                <div class="w-fit flex justify-between">
+                    <label class="flex flex-col p-4" for="degrees">
+                        <p class="text-xl font-bold mb-1">Degrees</p>
+                        <input class="outline-1 outline outline-gray-500 rounded-full px-2 py-1" type="number"
+                            name="from" id="degrees" placeholder="Temperature" required>
+                    </label>
+
+                    <label class="flex flex-col p-4" for="type">
+                        <p class="text-xl font-bold mb-1">Type</p>
+                        <select class="outline-gray-500 outline outline-1 rounded-full px-1 py-1" name="type" id="type"
+                            required>
+                            <option value="" disabled selected>None</option>
+                            <option value="Celsius">Celsius</option>
+                            <option value="Fahrenheit">Fahrenheit</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="w-full">
+
+                    <label class="flex flex-col p-4 " for="degrees">
+                        <p class="text-xl font-bold mb-1">Result</p>
+                        <input class="border outline-gray-500 outline outline-1 rounded-full px-2 py-1" id="result"
+                            value="" disabled></input>
+                    </label>
+                    <div class="w-full p-4">
+                        <input
+                            class="bg-blue-700 w-full text-xl font-bold p-2 rounded-full cursor-pointer duration-300 ease-in-out transition hover:scale-110 text-white"
+                            type="submit" id="convert_btn" value="CONVERT"></input>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
